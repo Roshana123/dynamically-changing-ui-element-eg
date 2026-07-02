@@ -1,0 +1,98 @@
+<mvc:View
+    controllerName="com.demo.b74sapui5app.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="i am view1"
+    >
+        <content>
+            <Button
+                text="Go to View2"
+                press="onPressButton"
+            />
+            <Text
+                id="idTextWelcome"
+                text="Wellcome SAPUI5 World!"
+                class="sapMH2FontSize"
+                textAlign="Center"
+                width="100%"
+            />
+            <Text
+                text="This is Left "
+                class="sapMH2FontSize"
+                textAlign="Left"
+                width="100%"
+            />
+            <Text
+                text="This is Right "
+                class="sapMH2FontSize"
+                textAlign="Right"
+                width="100%"
+            />
+            <Label
+                text="This is Label"
+                class="sapUiTinyMarginBegin"
+                required="true"
+            />
+            <Input
+                id="idIpName"
+                width="30%"
+                class="sapUiTinyMarginBegin"
+                maxLength="10"
+                enabled="true"
+            />
+            <Label
+                text="Enter Alignment"
+                class="sapUiSmallMarginBegin"
+                required="true"
+            />
+            <Input
+                id="idIpAlignment"
+                width="30%"
+                class="sapUiTinyMarginBegin"
+                maxLength="10"
+                enabled="true"
+            />
+            <Button
+                id="idBtnSubmit"
+                text="Submit"
+                class="sapUiTinyMarginBegin"
+                type="Neutral"
+                press="onPressSubmit"
+            />
+        </content>
+        <content>
+            <HBox>
+                <Button
+                id="idBtnRed"
+                    text="Red"
+               
+                    class="sapUiSmallMarginBegin"
+                />
+                <Button
+                id="idBtnGreen"
+                    text="Green"
+                 
+                    class="sapUiSmallMarginBegin"
+                />
+                <Button
+                id="idBtnYellow"
+                    text="Yellow"
+            
+                    class="sapUiSmallMarginBegin"
+                />
+            </HBox>
+            <HBox>
+            <Input id="idIpColor"   class="sapUiSmallMarginBegin"></Input>
+              <Button
+                    text="Appy"
+                    press="onPressColor"
+                    class="sapUiSmallMarginBegin"
+                    
+                />
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>
